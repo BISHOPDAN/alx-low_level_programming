@@ -8,17 +8,23 @@ int main(void)
 	int dan;
 	int n;
 
-	for (dan = 48; ch <= 57; dan++)
+	for (dan = 48; dan <= 57; dan++)
 	{
 		for (n = 49; n <= 57; n++)
 		{
-			putchar(dan);
-			putchar(n);
-			if (dan != 57)
+			if (n > dan)
 			{
-				putchar(44);
-				putchar(32);
+				putchar(dan);
+				putchar(n);
+				if (dan != 56 || n != 57)
+				{
+					putchar(44);
+					putchar(32);
+				}
 			}
 		}
 	}
+	putchar(10); /* this is an ascii code for new line*/
+
+	return (0);
 }
