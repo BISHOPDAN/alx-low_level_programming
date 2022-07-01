@@ -1,37 +1,24 @@
 #include <stdio.h>
-
 /**
- * main - Prints numbers between 00 to 99.
- * Return: Always 0 (Success)
+ *  main - Prints numbers between 00 to 99.
+ *  Return: Always 0 (Success)
  */
 int main(void)
 {
-	int i, e;
+	int dan;
+	int n;
 
-	i = 48;
-	e = 48;
-
-	while (e < 58)
+	for (dan = 48; ch <= 57; dan++)
 	{
-		i = 48;
-		while (i < 58)
+		for (n = 49; n <= 57; n++)
 		{
-			putchar(e);
-
-			putchar(i);
-			if (i == 57 && e == 57)
+			putchar(dan);
+			putchar(n);
+			if (dan != 57)
 			{
-				break;
+				putchar(44);
+				putchar(32);
 			}
-			putchar(',');
-
-			putchar(' ');
-			i++;
-
 		}
-		e++;
 	}
-	putchar('\n');
-
-	return (0);
 }
