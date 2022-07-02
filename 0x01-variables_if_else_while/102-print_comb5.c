@@ -5,23 +5,43 @@
  */
 int main(void)
 {
-	int ch;
-	int n;
+	int i, e, g, h, op1, op2;
 
-	for (ch = 48; ch <= 57; ch++)
+	i = e = g = h = 48;
+	while (h < 58)
 	{
-		for (n = 48; n <= 57; n++)
+		g = 48;
+		while (g < 58)
 		{
-			putchar(ch);
-			putchar(n);
-			if (ch != 57 || n != 57)
+			e = 48;
+			while (e < 58)
 			{
-				putchar(44);
-				putchar(32);
-			}
-		}
-	}
-	putchar(10);
+				i = 48;
+				while (i < 58)
+				{
+					op1 = (h * 10) + g;
+					op2 = (e * 10) + i;
+					if (op1 < op2)
+					{
+						putchar(h);
+						putchar(g);
+						putchar(' ');
+						putchar(e);
+						putchar(i);
+if (h == 57 && g == 56 && e == 57 && i == 56)
+	break;
+putchar(',');
+putchar(' ');
 
+					}
+					i++;
+				}
+				e++;
+			}
+			g++;
+		}
+		h++;
+	}
+	putchar('\n');
 	return (0);
 }
