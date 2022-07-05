@@ -2,7 +2,6 @@
 
 /**
 * print_times_table - Prints the n times table
-*
 * @n: number times table (0 < n <= 15)
 *
 * Return: no return
@@ -15,7 +14,6 @@ void print_times_table(int n)
 	{
 		for (a = 0; a <= n; a++)
 		{
-		
 			_putchar(48);
 			for (b = 1; b <= n; b++)
 			{
@@ -41,6 +39,7 @@ void print_times_table(int n)
 					_putchar((op % 10) + 48);
 				}
 			}
+			_putchar('\n');
 		}
 	}
 }
