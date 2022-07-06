@@ -45,4 +45,5 @@ int main(void)
 			boolean = 0;
 	}
 	printf("\n");
+	return (0);
 }
