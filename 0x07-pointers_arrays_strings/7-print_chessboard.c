@@ -1,18 +1,22 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
+ * print_chessboard - prints the chessboard
+ * @a: input pointer.
+ * Return: no return.
  */
-int main(void)
+void print_chessboard(char (*a)[8])
 {
-	char *s = "wworld of this";
-	char *f = "world";
-	char *t;
+	unsigned int i, m = 0;
 
-	t = _strstr(s, f);
-	printf("%s\n", t);
-	return (0);
+	for (i = 0; i < 64; i++)
+	{
+		if (i % 8 == 0 && i != 0)
+		{
+			m = i;
+			_putchar('\n');
+		}
+		_putchar(a[i / 8][i - m]);
+	}
+	_putchar('\n');
 }
