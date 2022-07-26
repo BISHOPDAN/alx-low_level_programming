@@ -5,7 +5,7 @@
  * _isupper - check if a character is uppercase
  * @c: variable whose character is to be checked
  *
- * Created by: Sanctus-Peter
+ * Created by: Dani6ix
  * cc: 7th july, 2022
  *
  * Return: 1 if is uppercase, 0 if otherwise
