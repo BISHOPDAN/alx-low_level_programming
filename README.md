@@ -1,6 +1,6 @@
 # Low-level programming & Algorithm
 
-Module of **Low-level programming** and **algorithm**, carried out during **Full Stack Software Engineering studies** at **[Holberton School](https://www.holbertonschool.com/)**.
+Module of **Low-level programming** and **algorithm**, carried out during **Full Stack Software Engineering studies** at **[ALX Holberton School](https://www.holbertonschool.com/)**.
 
 ## Technologies
 * Scripts written in Bash 4.3.11(1)
